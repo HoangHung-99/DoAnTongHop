@@ -1,15 +1,10 @@
-import React from "react";
-import { NativeRouter, Link, Route, Router } from "react-router-native";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 
-import Home from '../components/Home'
+import Home from "../components/Home";
 
+const AppNavigator = createStackNavigator({
+  Home: { screen: Home },
+})
 
-export default class AppRouting extends React.Component {
-  render() {
-    return (
-      <NativeRouter>
-        <Route exact path="/" component={Home}/>
-      </NativeRouter>
-    );
-  }
-}
+export default createAppContainer(AppNavigator);
