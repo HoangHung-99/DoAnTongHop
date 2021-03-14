@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import SplashScreen from "./src/components/SplashScreen";
+import SplashScreen from "./src/components/screen/SplashScreen";
 
 import AppRouting from "./src/routes/AppRouting";
 

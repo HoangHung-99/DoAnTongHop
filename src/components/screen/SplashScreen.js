@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
-import splash from '../styles/splash'
+import splash from '../../styles/splash'
 
 export class SplashScreen extends Component {
   render() {
